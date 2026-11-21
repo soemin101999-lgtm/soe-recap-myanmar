@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOE RECAP MYANMAR</title>
+<style>
+body {
+  background:#10131d;
+  color:white;
+  font-family:Arial,sans-serif;
+  text-align:center;
+  padding:20px;
+}
+.container {
+  max-width:450px;
+  margin:40px auto;
+  background:#202638;
+  padding:25px;
+  border-radius:18px;
+}
+h1 {color:#36d6b0;}
+input,button {
+  width:100%;
+  padding:14px;
+  margin:12px 0;
+  border-radius:10px;
+  box-sizing:border-box;
+}
+button {
+  background:#13b994;
+  color:white;
+  border:0;
+  font-size:17px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>SOE RECAP MYANMAR</h1>
+<p>AI Video Translation</p>
+<input type="file" id="video" accept="video/*">
+<button onclick="selectVideo()">Video ရွေးမယ်</button>
+<p id="status">Video ရွေးချယ်ပါ</p>
+<button onclick="alert('Rewarded Ads ကို နောက်အဆင့်မှာ ချိတ်ဆက်ပါမယ်။')">
+ကြော်ငြာကြည့်ပြီး ဘာသာပြန်မယ်
+</button>
+</div>
+<script>
+function selectVideo() {
+ const file=document.getElementById('video').files[0];
+ document.getElementById('status').innerText =
+ file ? 'ရွေးထားသော Video: '+file.name : 'Video ရွေးချယ်ပါ';
+}
+</script>
+</body>
+</html>
